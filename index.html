@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Password Generator</title>
+     
+     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'/>
+     
+     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="Assets/CSS/myStylesheet.css">
+     <link rel="stylesheet" href="Assets/CSS/stylesheet.css">
+
+</head>
+
+<body>
+     <div class="a-section">
+          <div class="a-margin-xl-left-right">
+               <div class="a-width-12-12">
+                    <div class="a-margin-xl-left-right">
+                         
+                         <div class="a-col">
+                              <div class="a-margin-xl-left-right a-padding-l-top-bottom">
+                                   <h1 class="h-1 a-margin-xl-bottom">Password Generator</h1>
+                                   
+                                   <h3 class="h-3">Select one of the options below:</h3>
+                                   
+                                   <div class="a-row a-margin-top-bottom">
+                                        <div class="options">
+                                             
+                                             <svg width="150" height="70" class="an-option" data-option="strong">
+                                                  <rect x="0" y="0" width="150" height="70" class="path"/>
+                                   
+                                                  <rect x="0" y="0" width="150" height="70" class="bar bar-active"/>
+                                   
+                                                  <text x="36.5", y="43" class="xl-txt btn-txt btn-txt-active">Strong</text>
+                                             </svg>
+                                        
+                                             <svg width="150" height="70" class="an-option" data-option="medium">
+                                                  <rect x="0" y="0" width="150" height="70" class="path"/>
+                                                  
+                                                  <rect x="0" y="0" width="150" height="70" class="bar"/>
+                                   
+                                                  <text x="25", y="43" class="xl-txt btn-txt btn-txt-inactive">Medium</text>
+                                             </svg>
+                                        
+                                             <svg width="150" height="70" class="an-option" data-option="easy">
+                                                  <rect x="0" y="0" width="150" height="70" class="path"/>
+                                   
+                                                  <rect x="0" y="0" width="150" height="70" class="bar"/>
+                                   
+                                                  <text x="47", y="43" class="xl-txt btn-txt btn-txt-inactive">Easy</text>
+                                             </svg>
+                                        </div>
+                                   </div>
+                                   
+                                   <h3 id="list-head" class="h-3 a-margin-top-bottom">Includes:</h3>
+
+                                   <button id="gen-btn" class="action-btn a-margin-top-bottom l-txt" style="width: 216px;">Generate Password</button><br>
+                                   
+                                   <div class="textarea-container a-margin-top-bottom">
+                                        <textarea id="generated-password" rows="1" readonly class="xl-txt"></textarea>
+
+                                        <p class="norm-txt float-txt hidden">Copied!</p>
+                                   </div>
+                                   
+                                   <button id="copy-btn" class="disabled-btn a-margin-bottom l-txt"><i class="fas fa-copy a-margin-s-right"></i>Copy to Clipboard</button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+     <script src="Assets/JS/script.js"></script>
+</body>
+
+</html>

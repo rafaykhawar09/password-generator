@@ -1,0 +1,124 @@
+
+*{
+     color: white;
+     font-family: 'Montserrat', sans-serif;
+}
+
+body{
+     background-color: #d1d1d1;
+}
+
+.a-col{
+     background-color: #3f3d56;
+     border-radius: 10px;
+     box-shadow: 0 10px 20px 2.5px #424242;
+}
+
+.h-1{
+     text-align: center;
+}
+
+.an-option:nth-child(2){
+     margin: 0 12px;
+}
+
+svg rect{
+     fill: transparent;
+     stroke-width: 12px; 
+     cursor: pointer;
+}
+
+.btn-txt{
+     font-weight: bold;
+     cursor: pointer;
+     fill: grey;
+}
+
+.path{
+     stroke: grey;
+}
+.btn-txt-inactive{
+     fill: grey;
+}
+
+
+.bar-active{
+     stroke: #0dff92;
+     stroke-dasharray: 600;
+     stroke-dashoffset:0;
+     animation: strokeFill 1s ease forwards;
+}
+.btn-txt-active{
+     fill: #0dff92;
+     transition-delay: 0.5s;
+}
+
+@keyframes strokeFill{
+     0%{stroke-dashoffset: 600;}
+     100%{stroke-dashoffset:0;}
+}
+
+ul{
+     color: white;
+}
+
+textarea{
+     resize: none;
+     width: 100%;
+     padding: 35px 20px;
+     border: none;
+     outline: none;
+     background: #575475;
+     text-align: center;
+}
+
+textarea::selection{
+     color: black;
+     background: #00ffaa;
+}
+
+.textarea-container{
+     position: relative;
+}
+
+.float-txt{
+     position: absolute;
+     top: 5px;
+     left: 7.5px;
+}
+
+.hidden{
+     display: none;
+}
+
+.action-btn{
+     width: 100%;
+     padding: 12px;
+     border-radius: 5px;
+     border: none;
+     background: #b30f30;
+     box-shadow: 0 8px 0 #610a1b;
+     outline: none;
+     cursor: pointer;
+}
+
+.action-btn:hover{
+     background: #880c25;
+     box-shadow: 0 8px 0 #470814;
+}
+
+.action-btn:active{
+     transform: translateY(5px);
+     box-shadow: 0 3px 0 #470814;
+}
+
+.disabled-btn{
+     width: 100%;
+     padding: 12px;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     cursor: not-allowed;
+     background: #5a5a5a;
+     box-shadow: 0 8px 0 #2e2e2e;
+}
