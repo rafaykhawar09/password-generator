@@ -52,6 +52,14 @@ $(document).ready(function(){
      let passwordLength = 20;
      option.click(function(){
 
+          let textarea = $("#generated-password");
+          
+          // clear the textarea
+          if( !($(this).children().hasClass("bar-active")) ){
+               textarea.text("");
+               $(".float-txt").addClass("hidden");
+          }
+
           // all buttons are made "inactive"
           option.children().removeClass("bar-active");
           option.children().removeClass("btn-txt-active");
