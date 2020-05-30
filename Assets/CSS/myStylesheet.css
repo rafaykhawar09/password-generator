@@ -390,13 +390,22 @@
      width: 100%;
 }
 
-
 .a-section{
-     /* margin: auto; */
-     max-width: 768px;
+     width: 600px;
      position: absolute;
-     top: 40%;
+     top: 50%;
      left: 50%;
-     transform: translate(-50%, -40%);
+     transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 600px) {
+     
+     .a-section {
+          top: 0;
+          left: 0;
+          transform: none;
+          width: 100vw;
+     }
 }
 
