@@ -18,13 +18,8 @@ body{
      text-align: center;
 }
 
-.options{
-     /* display: flex; */
-     /* justify-content: space-between; */
-}
-
 .an-option{
-     margin-right: 12px;
+     margin-right: 2px;
 }
 
 svg rect{
