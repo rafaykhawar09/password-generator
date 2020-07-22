@@ -4,7 +4,7 @@ $(document).ready(function(){
      let option = $(".an-option");
      let listHead = $("#list-head");
 
-     let uList = `<ul id="list" class="fa-ul" style="margin-left: 30px"></ul>`;
+     let uList = `<ul id="list" class="fa-ul" style="margin-left: 30px; min-height: 136px; display: flex; flex-direction: column; justify-content: space-around;"></ul>`;
      
      let liCombination = [
      `<li class="l-txt a-margin-xs-bottom">
@@ -74,6 +74,9 @@ $(document).ready(function(){
           // a new list is created based on which option was selected
           if($(this).data("option") === "strong"){
                
+               if( $(document).find("#list") )
+                    $("#list").remove();
+                    
                listHead.after(uList);
                for (let i = 0; i < liCombination.length; i++) {
                     $(document).find("#list").append(liCombination[i]);
@@ -84,6 +87,9 @@ $(document).ready(function(){
           }
           else if($(this).data("option") === "medium"){
                
+               if( $(document).find("#list") )
+                    $("#list").remove();
+                    
                listHead.after(uList);
                for (let i = 1; i < liCombination.length; i++) {
                     $(document).find("#list").append(liCombination[i]);
@@ -94,6 +100,9 @@ $(document).ready(function(){
           }
           else{
 
+               if( $(document).find("#list") )
+                    $("#list").remove();
+                    
                listHead.after(uList);
                for (let i = 1; i < liCombination.length-1; i++) {
                     $(document).find("#list").append(liCombination[i]);
